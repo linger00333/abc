@@ -1,0 +1,15 @@
+{
+  "scope": "EF_only_same_RoadBEV_dataset",
+  "method": "EF",
+  "seed": 307,
+  "epoch": 11,
+  "validation": {
+    "MAE_cm": 1.4157451464661217,
+    "RMSE_cm": 1.875500656816987,
+    "GT0p5_pct": 54.48538813695992
+  },
+  "checkpoint_sha256": "d9b09df17d580b803dc69d6d27579526d498bfe2f33f2a59f053f66fa24706f7",
+  "dataset_protocol_sha256": "b07cb03fc2af54770c65dce163854b54e75c63685a92c37904c55f369fd4fed4",
+  "time_unix": 1792889246.5873704,
+  "rule": "30 epochs; best full validation MAE, earliest tie; lock before test"
+}

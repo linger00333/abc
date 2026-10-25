@@ -1,0 +1,56 @@
+[
+  {
+    "packaged_path": "src/roadbev/models/efficientnet.py",
+    "source": "_abc_work/baseline_models/efficientnet.py",
+    "source_sha256": "721c77c9e8597eccf770dadedb9cd5cce1ffc102e5976209f572ec1ad4e2583c",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "packaged_path": "src/roadbev/models/ele_head.py",
+    "source": "_abc_work/baseline_models/ele_head.py",
+    "source_sha256": "9ccf35b458b9080ab4976114b8d46d970544c6faee84922f1dd64e724730e0f9",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "packaged_path": "src/roadbev/models/loss.py",
+    "source": "_abc_work/baseline_models/loss.py",
+    "source_sha256": "208e7197656e8ca51650ce6a83ae79974088bc00f56d7e275b0f86605a6e1d92",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "packaged_path": "src/roadbev/models/mobilenetv3.py",
+    "source": "_abc_work/baseline_models/mobilenetv3.py",
+    "source_sha256": "6b9c1c05b41803f5b8985a16563f4e91dd8801340ef788899deb3fc26a48dd9c",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "packaged_path": "src/roadbev/models/model.py",
+    "source": "_abc_work/baseline_models/model.py",
+    "source_sha256": "99f63d05517e3a4668cb6c48719e71e53fe61355963fbb5d0ca90e6398b6e138",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "packaged_path": "src/roadbev/models/submodule.py",
+    "source": "_abc_work/baseline_models/submodule.py",
+    "source_sha256": "f6cf8e8e2bf282c228a8570ae3e897a3a99bcbdee06f7f55cbec7b0d81b1dca0",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "packaged_path": "src/roadbev/models/__init__.py",
+    "source": "_abc_work/baseline_models/__init__.py",
+    "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "packaged_path": "src/ef_elev/self_core.py",
+    "source": "self_efelev_multiseed_20261021/code/selfcollected/src/reo_model.py",
+    "source_sha256": "708446737aff9ee7c13acfb5351eab437598deee2dfede7a41f9bf849a9c1d74",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "packaged_path": "src/ef_elev/self_inference.py",
+    "source": "_abc_work/upstream/code/selfcollected_port/self_adapter.py",
+    "source_sha256": "9f9b1a901550d6bd894dac23a09ec65a854fef6fd4838199d7db7e40b0d75e73",
+    "transformation": "Extract SelfSfree class unchanged; replace directory-dependent imports with local modules."
+  }
+]

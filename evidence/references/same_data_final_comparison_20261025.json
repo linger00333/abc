@@ -1,0 +1,87 @@
+{
+  "updated_beijing": "2026-10-25 09:50:35",
+  "complete": true,
+  "train_frames": 2552,
+  "validation_frames": 1205,
+  "test_frames": 988,
+  "seed": 307,
+  "epochs": 30,
+  "validation": {
+    "RoadBEV_Aug": {
+      "epoch": 20,
+      "MAE_cm": 1.4556895901429703,
+      "RMSE_cm": 1.937311497046245,
+      "GT0p5_pct": 56.98393430638116
+    },
+    "EF": {
+      "epoch": 11,
+      "MAE_cm": 1.4157451464661217,
+      "RMSE_cm": 1.875500656816987,
+      "GT0p5_pct": 54.48538813695992
+    }
+  },
+  "test": {
+    "all": {
+      "frames": 988,
+      "RoadBEV_Aug": {
+        "MAE_cm": 2.2498392439654724,
+        "RMSE_cm": 2.850937800429128,
+        "GT0p5_pct": 69.98620886536624
+      },
+      "EF": {
+        "MAE_cm": 1.9842775715807832,
+        "RMSE_cm": 2.572904586594319,
+        "GT0p5_pct": 63.88004375282657
+      },
+      "EF_MAE_reduction_cm": 0.2655616723846892,
+      "EF_MAE_reduction_pct": 11.803584327057138
+    },
+    "instantaneous_high": {
+      "frames": 42,
+      "RoadBEV_Aug": {
+        "MAE_cm": 1.966492576258523,
+        "RMSE_cm": 2.5351265583719527,
+        "GT0p5_pct": 79.77865267367591
+      },
+      "EF": {
+        "MAE_cm": 1.731730720108833,
+        "RMSE_cm": 2.2598232295330516,
+        "GT0p5_pct": 76.39877926147659
+      },
+      "EF_MAE_reduction_cm": 0.23476185614969003,
+      "EF_MAE_reduction_pct": 11.938100300197995
+    },
+    "recurrent_high_segments": {
+      "frames": 120,
+      "RoadBEV_Aug": {
+        "MAE_cm": 1.942617476483186,
+        "RMSE_cm": 2.560702652732531,
+        "GT0p5_pct": 80.064604083697
+      },
+      "EF": {
+        "MAE_cm": 1.76698438134317,
+        "RMSE_cm": 2.4067508968964315,
+        "GT0p5_pct": 78.02568784900676
+      },
+      "EF_MAE_reduction_cm": 0.17563309514001602,
+      "EF_MAE_reduction_pct": 9.041054004001502
+    }
+  },
+  "EF_mean_epoch_minutes": 5.665155988799201,
+  "checkpoint_sha256": {
+    "RoadBEV_Aug": "93643c3b883b427a1127c0727672bfbfe7c762150f02b91a2854c97d497100bd",
+    "EF": "d9b09df17d580b803dc69d6d27579526d498bfe2f33f2a59f053f66fa24706f7"
+  },
+  "verification": {
+    "exact_same_split_metadata": true,
+    "exact_same_988_test_IDs": true,
+    "reported_metrics_recomputed_from_per_frame": true,
+    "checkpoint_hashes_verified": true
+  },
+  "limitations": [
+    "Single seed307 only; no uncertainty across training seeds",
+    "Native input and training settings differ: stereo RoadBEV versus monocular EF, different augmentation and batch size",
+    "GT is exploratory plane residual; one test acquisition session, spatial route independence unconfirmed",
+    "Bump subsets overlap and are not independent test sets"
+  ]
+}

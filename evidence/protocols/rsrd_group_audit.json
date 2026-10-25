@@ -1,0 +1,15 @@
+{
+  "frames": 296,
+  "exact_physical_sequence_matches": 0,
+  "date_counts": {
+    "20230317": 23,
+    "20230321": 10,
+    "20230406": 23,
+    "20230408": 119,
+    "20230409": 121
+  },
+  "status": "Original metadata union has no exact test-ID sequence mapping; physical acquisition units unresolved.",
+  "excluded_fields": "Coordinates and other unrelated raw location fields are not redistributed.",
+  "bootstrap_policy": "No acquisition-session or route bootstrap CI. Date grouping is descriptive only.",
+  "manifest_sha256": "7a3a2051699b5e7a41640f89ed9894238d5c80b2a6f7612816a91f677b95fea5"
+}

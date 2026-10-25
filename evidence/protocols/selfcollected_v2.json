@@ -1,0 +1,89 @@
+{
+  "status": "frozen half-size training list before any new training",
+  "source": "/home/lixl/Project/roadbev_5mix/reo/experiments/data1_bump_screen_20261021/reports/exported_frame_motion.csv",
+  "source_sha256": "cab11d417f4f3c7172085bb83029141294721b0902e68d05ea69c638dc416b82",
+  "session_assignment": {
+    "20260130_093151": "train",
+    "20260130_105616": "train",
+    "20260130_103222": "val",
+    "20260130_101308": "test",
+    "20260130_104714": "calibration"
+  },
+  "counts": {
+    "train": {
+      "frames": 2552,
+      "bags": 45,
+      "sessions": [
+        "20260130_093151",
+        "20260130_105616"
+      ],
+      "instantaneous_high": 78,
+      "recurrent_blocks": 4,
+      "recurrent_frames": 158,
+      "mandatory_union": 217,
+      "ordinary_frames": 2335
+    },
+    "val": {
+      "frames": 1205,
+      "bags": 11,
+      "sessions": [
+        "20260130_103222"
+      ],
+      "instantaneous_high": 27
+    },
+    "test": {
+      "frames": 988,
+      "bags": 9,
+      "sessions": [
+        "20260130_101308"
+      ],
+      "instantaneous_high": 42
+    }
+  },
+  "methods": [
+    "RoadBEV+Aug"
+  ],
+  "primary_seed": 307,
+  "EF_seeds": [
+    307,
+    1101,
+    2202
+  ],
+  "epochs": 30,
+  "selection": "minimum complete clean validation frame-mean MAE; earliest on exact tie",
+  "initialization": "same generic ImageNet backbone and random task heads; fresh seed307; no old data1 or smoke task checkpoint",
+  "primary_training_budgets": "native batch/optimizer/loss/augmentation recipes,30 epochs each; no test-based early stopping; all epoch candidates retained",
+  "quality": "same previous plane residual target; nonground support<=50%,>=100ROI points,>=1000cells,nearest fused center<=300ms,pose bracket<=20ms,no extrapolation,exact stereo inputs; all valid frames retained",
+  "test_motion_rule": "existing August training P90 peak_xy>0.3744372541341072rad/s OR 100ms path_xy>1.1249450202979638deg; contiguous20s blocks with>=10% valid frames high and>=3 distinct high seconds",
+  "calibration_source": "/home/lixl/Project/roadbev_5mix/reo/experiments/data1_continuous_eval_20261022/january_stereo_calibration.json",
+  "calibration_sha256": "de55e4bb77351280c275784dc134ef18925ae618c1cce2a04bba2027c270ac09",
+  "limitations": [
+    "historical January frozen scores seen; not blind model-development holdout",
+    "one test session; route spatial independence unproven",
+    "GT robust fitter and absolute gravity not independently recovered; exploratory labels",
+    "only71 available exports,not all412 raw bags have training-ready derivatives",
+    "Training composition enriched for IMU motion proxies; not manually confirmed pavement roughness. Retains all original identified bump frames, adds none from held-out sessions."
+  ],
+  "dataset_version": "data1_half_bump_v1_20261023",
+  "supersedes": "/home/lixl/Project/roadbev_5mix/reo/experiments/data1_train_20261022/protocol.json",
+  "parent_protocol_sha256": "594cdf498545d557ff6595312647558bec24d45f1b2246204236a8c6b35df73f",
+  "training_motion_definition_source": "/home/lixl/Project/roadbev_5mix/reo/experiments/data1_train_20261022/protocol.json",
+  "selection_scheme": "Keep every original training recurrent20s block frame and every instantaneous-high frame; SHA256 ranked proportional bag then20s-block allocation for remaining background. No validation/test frame moved to training; no model errors used.",
+  "sampling_seed": 307,
+  "training_target": 2552,
+  "train_manifest_sha256": "ae1304d5b8ab69079b5d465ea79e279632c81b922e90d920ab243e5e82ec10a8",
+  "manifest_sha256": {
+    "manifests/val.txt": "862dad289fccccaca52ac212b3b54876e8832a2878eb3d2c54479bdd1a88d5db",
+    "manifests/train_removed.txt": "d3c298be4042b6c9fb2ced1ccf44fc1e4a07cd8e288d297b11578f0f9bae1a87",
+    "manifests/split_manifest.csv": "9e37f9b892736b100b48c9153b3264ba4eb18a76695661f737b228872c27a92a",
+    "manifests/train.txt": "ae1304d5b8ab69079b5d465ea79e279632c81b922e90d920ab243e5e82ec10a8",
+    "manifests/test.txt": "1a001eb7ed751eea4eb09a3b4854b01f1c08966cad732a740892cfb978ebabed",
+    "manifests/old_train_superseded.txt": "b647f3dd198e6731da5043238340b63abea7dc2663525bb86fed15aeed353a6a",
+    "data/metadata/train/custom_train.pkl": "8677b31f8512ea33c450d78e1c5acf1547e4371014ef668283f05c6067d11dac",
+    "data/metadata/val/custom_val.pkl": "afc7b8e51c70412cf01a2d3487ed9b3b087e7d1fcc88af5637f68a4d6a56a68c",
+    "data/metadata/test/custom_test.pkl": "0ee59b325a641bd223f7b0210614fd2fc91d8a3e26d9f231b88cf716d21bec71"
+  },
+  "GT_source": "/home/lixl/Project/roadbev_5mix/reo/experiments/data1_train_20261022/data/gt",
+  "numerical_policy": "same protected FP32 window attention inside native FP16 AMP as the preceding augmented run",
+  "runtime_comparison": "Compare actual first completed epoch and steady batch speed with preceding full5103-frame run;30 epochs retained, so total optimizer steps approximately halve and accuracy comparison is not equal-step training."
+}

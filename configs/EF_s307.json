@@ -1,0 +1,52 @@
+{
+  "model": "EF",
+  "seed": 307,
+  "source": "/home/lixl/Project/roadbev_5mix/reo/experiments/data1_ef_half_bump_20261025/runs/EF_s307/run_config.json",
+  "sha256": "1a694b567cf79563738ec4ba53f41c767d8348296ca2a87dbaf566cba4e5f86e",
+  "config": {
+    "seed": 307,
+    "epochs": 30,
+    "batch_size": 3,
+    "val_batch_size": 1,
+    "num_workers": 4,
+    "lr": 0.0003,
+    "backbone_lr": 2e-05,
+    "weight_decay": 0.0001,
+    "grad_clip": 1.0,
+    "pytorch_allocator_cap_GiB": 18,
+    "data": "/home/lixl/Project/roadbev_5mix/reo/experiments/data1_ef_half_bump_20261025/data",
+    "pretrained": "/home/lixl/Project/roadbev_5mix/generated/efficientnet_b6_lukemelas-c76e70fd.pth",
+    "calibration": "/home/lixl/Project/roadbev_5mix/reo/experiments/data1_ef_half_bump_20261025/january_stereo_calibration.json",
+    "exclude_frames": null,
+    "hf_loss": {
+      "relief_weight": 1.0,
+      "grad": 0.1,
+      "deplane": 0.1,
+      "relief_threshold_cm": 1.5,
+      "beta_cm": 1.0
+    },
+    "color_probability": 0.5,
+    "color_range": [
+      0.9,
+      1.1
+    ],
+    "rotation_max_deg": 1.0,
+    "bump_probability": 0.6,
+    "rotation_distribution": "exp22 radial magnitude U(0,1), direction uniform pitch/roll; axes bounded +/-1deg",
+    "rotational_blur_max_deg": 0.2,
+    "precision": "FP32",
+    "drop_last": false,
+    "checkpoint_selection": "minimum clean validation frame-mean MAE; earliest on ties",
+    "validation": true,
+    "pretrained_task_checkpoint_loaded": false,
+    "method": "EF",
+    "sampler": "AFS",
+    "loss": "RASL / HF-light",
+    "forward_inputs": [
+      "RGB"
+    ],
+    "training_image_augmentation_uses_K": true,
+    "GT": "unchanged plane residual cm",
+    "image_root": "/data/lixl/my_data"
+  }
+}

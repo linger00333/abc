@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "dense_cached_conditions": 318,
+  "max_source_metric_difference": 9.947598300641403e-14,
+  "extra_cached_conditions": 288,
+  "new_test_frames_per_model": 988,
+  "bump_union_frames": 139,
+  "epoch_selection": "RSRD fixed final50; self-collected validation-selected checkpoints",
+  "statistics": "Frame equal weighting; signed conditions averaged within each seed; sample SD across seeds."
+}

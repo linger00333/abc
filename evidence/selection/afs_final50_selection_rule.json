@@ -1,0 +1,18 @@
+{
+  "purpose": "Explicit outcome-selected illustrative successes, not unbiased evaluation or a new test set",
+  "searched_frames": 296,
+  "seeds": [
+    307,
+    1101,
+    2202
+  ],
+  "conditions": [
+    "clean",
+    "rotation_pitch_+5_image",
+    "motion_L25_a45"
+  ],
+  "per_seed_success": "GT deplaned p98>=2.5cm, >=80 relief cells (absGTdeplane>1.5cm), raw MAE and relief-shape MAE each improve >=10%, AFS amplitude gain>=0.35 and closer to1",
+  "ranking": "First number of successful seeds, then minimum of mean raw/relief-shape percent improvement",
+  "metrics": "Each map independently plane-fitted on identical original valid GT mask. Main absolute MAE unchanged.",
+  "full_unfiltered_gallery": "../index.html"
+}

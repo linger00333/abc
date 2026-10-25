@@ -1,0 +1,92 @@
+{
+  "instantaneous_high": {
+    "frames": 42,
+    "bags": 4,
+    "segments": 11,
+    "RoadBEV_Aug": {
+      "MAE_cm": 1.966492576258523,
+      "RMSE_cm": 2.5351265583719527,
+      "GT0p5_pct": 79.77865267367591
+    },
+    "EF": {
+      "MAE_cm": 1.731730720108833,
+      "RMSE_cm": 2.2598232295330525,
+      "GT0p5_pct": 76.39877926147659
+    },
+    "EF_MAE_reduction_pct": 11.938100300197995,
+    "EF_GT0p5_reduction_pp": 3.3798734121993164,
+    "EF_lower_frame_MAE_count": 33
+  },
+  "recurrent_high_segments": {
+    "frames": 120,
+    "bags": 3,
+    "segments": 3,
+    "RoadBEV_Aug": {
+      "MAE_cm": 1.942617476483186,
+      "RMSE_cm": 2.560702652732531,
+      "GT0p5_pct": 80.064604083697
+    },
+    "EF": {
+      "MAE_cm": 1.7669843813431703,
+      "RMSE_cm": 2.4067508968964306,
+      "GT0p5_pct": 78.02568784900672
+    },
+    "EF_MAE_reduction_pct": 9.041054004001492,
+    "EF_GT0p5_reduction_pp": 2.0389162346902907,
+    "EF_lower_frame_MAE_count": 87
+  },
+  "bump_union": {
+    "frames": 139,
+    "bags": 4,
+    "segments": 11,
+    "RoadBEV_Aug": {
+      "MAE_cm": 1.968369919190304,
+      "RMSE_cm": 2.5804230129118446,
+      "GT0p5_pct": 79.88687719372537
+    },
+    "EF": {
+      "MAE_cm": 1.7757694415659229,
+      "RMSE_cm": 2.397683699840098,
+      "GT0p5_pct": 77.58580075599579
+    },
+    "EF_MAE_reduction_pct": 9.784770420775779,
+    "EF_GT0p5_reduction_pp": 2.301076437729577,
+    "EF_lower_frame_MAE_count": 103
+  },
+  "overlap": {
+    "frames": 23,
+    "bags": 3,
+    "segments": 3,
+    "RoadBEV_Aug": {
+      "MAE_cm": 1.8305811571038288,
+      "RMSE_cm": 2.3948189123817114,
+      "GT0p5_pct": 80.616520539574
+    },
+    "EF": {
+      "MAE_cm": 1.6495158099168774,
+      "RMSE_cm": 2.1932456082689664,
+      "GT0p5_pct": 77.71325938171333
+    },
+    "EF_MAE_reduction_pct": 9.8911401160392,
+    "EF_GT0p5_reduction_pp": 2.903261157860669,
+    "EF_lower_frame_MAE_count": 17
+  },
+  "remaining": {
+    "frames": 849,
+    "bags": 9,
+    "segments": 32,
+    "RoadBEV_Aug": {
+      "MAE_cm": 2.2959219720499817,
+      "RMSE_cm": 2.895227029480839,
+      "GT0p5_pct": 68.3652513887562
+    },
+    "EF": {
+      "MAE_cm": 2.0184149450461133,
+      "RMSE_cm": 2.6015921051559654,
+      "GT0p5_pct": 61.63610944959877
+    },
+    "EF_MAE_reduction_pct": 12.086953754621199,
+    "EF_GT0p5_reduction_pp": 6.7291419391574365,
+    "EF_lower_frame_MAE_count": 677
+  }
+}

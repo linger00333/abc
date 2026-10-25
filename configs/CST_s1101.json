@@ -1,0 +1,119 @@
+{
+  "model": "exp21",
+  "seed": 1101,
+  "source": "native A_HF_light run_config.json",
+  "sha256": "d7cbf0df539c413fbc6a6512442419885ff6e1c8ed9102ddd649287526014fdc",
+  "config": {
+    "seed": 1101,
+    "epochs": 50,
+    "batch_size": 8,
+    "num_workers": 2,
+    "lr": 0.0003,
+    "backbone_lr": 2e-05,
+    "optimizer": "AdamW",
+    "weight_decay": 0.0001,
+    "scheduler": "constant",
+    "grad_clip": 1.0,
+    "dim": 128,
+    "num_heads": 4,
+    "num_layers": 2,
+    "query_chunk": 1024,
+    "pool_size": [
+      66,
+      120
+    ],
+    "attn_grid": [
+      82,
+      32
+    ],
+    "self_attn": true,
+    "grad_ckpt": true,
+    "amp": "bfloat16",
+    "freeze_pretrained_bn": true,
+    "height_range_cm": 20,
+    "cla_res_cm": 0.5,
+    "gt_root": "/home/lixl/Project/roadbev_5mix/reo/experiments/rsrd_dense_exact_cache_20261014/artifacts/gt",
+    "pretrained": "/home/lixl/Project/roadbev_5mix/generated/efficientnet_b6_lukemelas-c76e70fd.pth",
+    "manifest": "/home/lixl/Project/roadbev_5mix/reo/experiments/exp28_rsrd_dense_multiseed_20261015/artifacts/manifest.json",
+    "checkpoint_selection": "final50 primary; additionally lowest native epoch-mean training loss",
+    "validation": false,
+    "augmentation": "none",
+    "auxiliary_read": false,
+    "auxiliary_compute": false,
+    "num_cams": 1,
+    "drop_last": false,
+    "differences_from_RoadBEV": "REO attention architecture; AdamW 3e-4/2e-5 constant vs official AdamW/OneCycle max8e-4; batch8 matches official; BF16; pretrained BN frozen; int32 GT audit reported",
+    "geometry_fixed": {
+      "K": [
+        [
+          1001.6121826171875,
+          0.0,
+          499.1816101074219
+        ],
+        [
+          0.0,
+          1001.6121826171875,
+          260.0549011230469
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "r_vert2cam": [
+        [
+          0.999978617123145,
+          -0.006179997091222189,
+          0.002148857779135649
+        ],
+        [
+          0.006542930065183715,
+          0.9444925629295389,
+          -0.32846763169474236
+        ],
+        [
+          3.356781082859022e-07,
+          0.3284746562650274,
+          0.944512771043764
+        ]
+      ],
+      "origin_y_m": 1.1,
+      "source": "training1210 only, arithmetic K mean and SO3-projected rotation mean",
+      "frame_convention": "gravity (x,1.1-height_cm/100,z) -> camera via R; no second lidar translation",
+      "rotation_det": 1.000000007782414
+    },
+    "plane_weights": [
+      1.0,
+      1.0,
+      0.5,
+      0.1
+    ],
+    "augmentation_probability": 0.5,
+    "rotation_range_deg": 1.0,
+    "color_probability": 0.5,
+    "color_range": [
+      0.9,
+      1.1
+    ],
+    "modules": "A",
+    "run_name": "A_HF_light",
+    "run_root": "/home/lixl/Project/roadbev_5mix/reo/experiments/exp28_rsrd_dense_multiseed_20261015/seeds/s1101/reo/runs/A_HF_light",
+    "plane_targets": "/home/lixl/Project/roadbev_5mix/reo/experiments/rsrd_dense_exact_cache_20261014/artifacts/train_planes.npz",
+    "test_access": "only after final50",
+    "physical_gpu_index": 0,
+    "shared_compute_user_authorized": true,
+    "pytorch_allocator_cap_GiB": 20,
+    "experiment": "exp21",
+    "hf_loss": {
+      "relief_threshold_cm": 1.5,
+      "relief_weight": 1.0,
+      "grad": 0.1,
+      "deplane": 0.1,
+      "beta_cm": 1.0
+    },
+    "train_frames": 2468,
+    "calibration_used_in_forward": false,
+    "checkpoint_selection_metric": "loss"
+  }
+}

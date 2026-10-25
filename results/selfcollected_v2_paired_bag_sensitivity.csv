@@ -1,0 +1,5 @@
+subset,frames,bags_with_subset,delta_EF_minus_RoadBEV_cm,CI95_low_cm,CI95_high_cm,resamples,valid_resamples,random_seed,scope
+all,988,9,-0.26556167238468903,-0.4092183538298319,-0.1354112194096386,10000,10000,0,Conditional fixed-checkpoint bag resampling within one test acquisition; not route/session or training-seed uncertainty.
+instantaneous_high,42,4,-0.2347618561496898,-0.28371905339686904,-0.20859375770132593,10000,9948,0,Conditional fixed-checkpoint bag resampling within one test acquisition; not route/session or training-seed uncertainty.
+recurrent_high_segments,120,3,-0.17563309514001577,-0.2454593029840429,-0.07048856989332083,10000,9719,0,Conditional fixed-checkpoint bag resampling within one test acquisition; not route/session or training-seed uncertainty.
+bump_union,139,4,-0.19260047762438104,-0.2517898099545422,-0.1303313846767169,10000,9948,0,Conditional fixed-checkpoint bag resampling within one test acquisition; not route/session or training-seed uncertainty.

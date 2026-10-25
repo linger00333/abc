@@ -1,0 +1,4 @@
+﻿subset,frames,bags_total,bags_with_subset,delta_AFS_minus_noAFS,CI95_low,CI95_high,n_boot,valid_boot,seed,scope
+all,1139,10,10,0.07575290137815893,0.03161275226453456,0.12612319993331328,10000,10000,0,fixed validation-selected checkpoints; bag clusters; not training-seed uncertainty
+bump,192,10,10,0.06924080290921171,-0.012492078190883327,0.15481465022795002,10000,10000,0,fixed validation-selected checkpoints; bag clusters; not training-seed uncertainty
+other,947,10,10,0.07707320011737526,0.03300654495485211,0.12933332571867828,10000,10000,0,fixed validation-selected checkpoints; bag clusters; not training-seed uncertainty

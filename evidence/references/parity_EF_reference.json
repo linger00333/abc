@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "frames": 3,
+  "input_tensors_exactly_identical": true,
+  "max_prediction_difference_cm": 0.0,
+  "mean_prediction_differences_cm": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "torch": "2.6.0+cu118",
+  "numpy": "1.26.4",
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "training_checkpoint_loaded": false,
+  "scope": "separate parity process reads historical task weights only; data1 train builds new model from generic backbone; native model and preprocessing reproduction in original runtime"
+}

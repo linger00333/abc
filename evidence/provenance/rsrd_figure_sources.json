@@ -1,0 +1,16 @@
+[
+  {
+    "sample_id": "20230408031625.600",
+    "raw_image_source": "/data/lixl/Roadbev/RSRD-dense/test/left_half/20230408031625.600.jpg",
+    "raw_image_sha256": "d94729898781923496b00a6de7f5f64309d5ad2f729f57a40b509ae0378a5d6b",
+    "transformation": "Crop raw half-resolution RGB to top 528 rows and left 960 columns; no rescaling.",
+    "packaged_path": "evidence/figure_sources/rsrd_20230408031625.600.npz"
+  },
+  {
+    "sample_id": "20230409020600.400",
+    "raw_image_source": "/data/lixl/Roadbev/RSRD-dense/test/left_half/20230409020600.400.jpg",
+    "raw_image_sha256": "12666f8db0328b6dd5a51951a85e9e5731b08a8999066fbb9e794d7e3285e4c6",
+    "transformation": "Crop raw half-resolution RGB to top 528 rows and left 960 columns; no rescaling.",
+    "packaged_path": "evidence/figure_sources/rsrd_20230409020600.400.npz"
+  }
+]

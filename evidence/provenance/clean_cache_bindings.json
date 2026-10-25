@@ -1,0 +1,146 @@
+[
+  {
+    "model": "baseline",
+    "seed": 307,
+    "condition": "clean",
+    "source": "/home/lixl/Project/roadbev_5mix/reo/experiments/exp27_dense_robustness_s307_20261015/predictions/baseline/clean/predictions_cm.npz",
+    "prediction_sha256": "76a544381533530cabac69aeb2ba20d8dd709fd1ef5fbc10e146e026e169a2fb",
+    "checkpoint_sha256": "41d2eb366c56b7e8d30adffa3e1f9f9e0d5d86f33f2a0475b33971929ef913a1"
+  },
+  {
+    "model": "baseline",
+    "seed": 1101,
+    "condition": "clean",
+    "source": "/home/lixl/Project/roadbev_5mix/reo/experiments/exp28_rsrd_dense_multiseed_20261015/evaluation/s1101/final50/predictions/baseline/clean/predictions_cm.npz",
+    "prediction_sha256": "86cb14f359e7d773fdfc5bd77bb6b2bc2238425e2eba64ca95187c45164a7fd9",
+    "checkpoint_sha256": "5af8dc5f62e1187d4846907572fe809e0c782aabfa24f338e801da94d1116776"
+  },
+  {
+    "model": "baseline",
+    "seed": 2202,
+    "condition": "clean",
+    "source": "/home/lixl/Project/roadbev_5mix/reo/experiments/exp28_rsrd_dense_multiseed_20261015/evaluation/s2202/final50/predictions/baseline/clean/predictions_cm.npz",
+    "prediction_sha256": "a05e962641cda3824f9b5d8c32142c3bc132b6657f1991d267400df9939630d7",
+    "checkpoint_sha256": "87694667478436d33e4a88cb709a0d8069a2e52cd1b3eccc8dd4883365a14af4"
+  },
+  {
+    "model": "baseline_aug",
+    "seed": 307,
+    "condition": "clean",
+    "source": "/home/lixl/Project/roadbev_5mix/reo/experiments/exp27_dense_robustness_s307_20261015/predictions/baseline_aug/clean/predictions_cm.npz",
+    "prediction_sha256": "59b810cd251a997b782e9a0c098a4d3912aabd33eda9196fe7024b207c4a9aaa",
+    "checkpoint_sha256": "97e609ead57dd2e509c1989a92f7fb7aa7bd0448ec37ae64f259c797c19b51e8"
+  },
+  {
+    "model": "baseline_aug",
+    "seed": 1101,
+    "condition": "clean",
+    "source": "/home/lixl/Project/roadbev_5mix/reo/experiments/exp28_rsrd_dense_multiseed_20261015/evaluation/s1101/final50/predictions/baseline_aug/clean/predictions_cm.npz",
+    "prediction_sha256": "2423f381be2ad921c3cc701f470300114a19204e2669a12607a700d0e131c9fa",
+    "checkpoint_sha256": "2b4868b13dd3dfffebf101931c6b4888b045b9f830fe6181cc809d022e9471f7"
+  },
+  {
+    "model": "baseline_aug",
+    "seed": 2202,
+    "condition": "clean",
+    "source": "/home/lixl/Project/roadbev_5mix/reo/experiments/exp28_rsrd_dense_multiseed_20261015/evaluation/s2202/final50/predictions/baseline_aug/clean/predictions_cm.npz",
+    "prediction_sha256": "c705210825041651530ad9b2f61bab238933cd9420498f037fb94afbc2b26524",
+    "checkpoint_sha256": "2a54be07b3e00a48e7a9bd4e095861656881fecc4c98d38800b35b28c5ac1a45"
+  },
+  {
+    "model": "exp21",
+    "seed": 307,
+    "condition": "clean",
+    "source": "/home/lixl/Project/roadbev_5mix/reo/experiments/exp27_dense_robustness_s307_20261015/predictions/exp21/clean/predictions_cm.npz",
+    "prediction_sha256": "d5daca48ae1e4551bff4249e231385e6a83ae151df7636a93e0d946575317b50",
+    "checkpoint_sha256": "8f9c0aff90ae185c16c04595c7c918bc0f3e5d90efe1e178415806f296035392"
+  },
+  {
+    "model": "exp21",
+    "seed": 1101,
+    "condition": "clean",
+    "source": "/home/lixl/Project/roadbev_5mix/reo/experiments/exp28_rsrd_dense_multiseed_20261015/evaluation/s1101/final50/predictions/exp21/clean/predictions_cm.npz",
+    "prediction_sha256": "ca19f7763dd1b4b400d7baffc99bf3c053536310b9e86cd188b307b0bfb240d2",
+    "checkpoint_sha256": "cf50dbdb7f2c42ef1a20da0d1d7fdb22395bcbde18cb862369db17e17f892cbe"
+  },
+  {
+    "model": "exp21",
+    "seed": 2202,
+    "condition": "clean",
+    "source": "/home/lixl/Project/roadbev_5mix/reo/experiments/exp28_rsrd_dense_multiseed_20261015/evaluation/s2202/final50/predictions/exp21/clean/predictions_cm.npz",
+    "prediction_sha256": "cfe6a584147483fe65478818354d867451a95be501196688efa573c71ca61b6a",
+    "checkpoint_sha256": "3e2cc85f0f297a810b68c3dbc6f29d8a716f0f413f3561d39e0e6f350b41852e"
+  },
+  {
+    "model": "S_free",
+    "seed": 307,
+    "condition": "clean",
+    "source": "/home/lixl/Project/roadbev_5mix/reo/experiments/exp29_rsrd_dense_geo_sampling_s307_20261015/runs/S_free/predictions/ep50/clean/predictions_cm.npz",
+    "prediction_sha256": "ab57fc350e4aae2c40fe86898e86f07aaa20deb64b59569e6d1e901f715a5bfd",
+    "checkpoint_sha256": "8484d4165d28ddda44d4aeb139988a27bd804df91057ca7dea7208a94e8d305c"
+  },
+  {
+    "model": "S_free",
+    "seed": 1101,
+    "condition": "clean",
+    "source": "/home/lixl/Project/roadbev_5mix/reo/experiments/exp30_sfree_protocol_20261015/runs/S_free_s1101/predictions/ep50_native_b8/clean/predictions_cm.npz",
+    "prediction_sha256": "15a4947a44588400223db3abb757f0f8c9bfc24c7ff799f98dff2faf6f5903ec",
+    "checkpoint_sha256": "c28242e8420aad1f2b94c75a816166c1ac643d42529f394f17a1e796a2f38696"
+  },
+  {
+    "model": "S_free",
+    "seed": 2202,
+    "condition": "clean",
+    "source": "/home/lixl/Project/roadbev_5mix/reo/experiments/exp30_sfree_protocol_20261015/runs/S_free_s2202/predictions/ep50_native_b8/clean/predictions_cm.npz",
+    "prediction_sha256": "626728c0e560c9da0c5631d1579b43bcd905c3865114509de0b4e280ef618ccc",
+    "checkpoint_sha256": "9c849e7d6117dd23734ebee31e40c520ea71987864dca29e2c141b03c2f021dc"
+  },
+  {
+    "model": "A2",
+    "seed": 307,
+    "condition": "clean",
+    "source": "/home/lixl/Project/roadbev_5mix/reo/experiments/exp30_sfree_protocol_20261015/runs/A2_s307/predictions/ep50_native_b8/clean/predictions_cm.npz",
+    "prediction_sha256": "950a4f74481872ea35390a0c80479b44ded9d7ff4c31d94ca112675ecf92c829",
+    "checkpoint_sha256": "721533759cf2e4485cc4893c87648e6db80d99d8b15f2631d21c8e98f31b5f8e"
+  },
+  {
+    "model": "A2",
+    "seed": 1101,
+    "condition": "clean",
+    "source": "/home/lixl/Project/roadbev_5mix/reo/experiments/exp30_sfree_protocol_20261015/runs/A2_s1101/predictions/ep50_native_b8/clean/predictions_cm.npz",
+    "prediction_sha256": "81cb7a1b5258c25ef3d8d520720bf4568b662ee261a891d3b89abcdb6ac552b1",
+    "checkpoint_sha256": "f6ed3201329332269c402586b7bc190c9a8ada2f4943b69eb13b298635da292e"
+  },
+  {
+    "model": "A2",
+    "seed": 2202,
+    "condition": "clean",
+    "source": "/home/lixl/Project/roadbev_5mix/reo/experiments/exp30_sfree_protocol_20261015/runs/A2_s2202/predictions/ep50_native_b8/clean/predictions_cm.npz",
+    "prediction_sha256": "e1a28eb94c9347c729d35c38e36caf264d28d8aa13abc58681d6204425fe44c2",
+    "checkpoint_sha256": "91dd22a2f3203d2a24d01b06c27bbca040cbfa249477d61f452b0cb4292b97d7"
+  },
+  {
+    "model": "A3",
+    "seed": 307,
+    "condition": "clean",
+    "source": "/home/lixl/Project/roadbev_5mix/reo/experiments/exp30_sfree_protocol_20261015/runs/A3_s307/predictions/ep50_native_b8/clean/predictions_cm.npz",
+    "prediction_sha256": "d49ab8b0ccd2397f520006725b0b61ae8be8d78bce442df057ed7dbc4df8c126",
+    "checkpoint_sha256": "f0f14e4bc8c7b2c8e16160187e8f45c1f54fe259cf80425da79823a90605a3d7"
+  },
+  {
+    "model": "A3",
+    "seed": 1101,
+    "condition": "clean",
+    "source": "/home/lixl/Project/roadbev_5mix/reo/experiments/exp30_sfree_protocol_20261015/runs/A3_s1101/predictions/ep50_native_b8/clean/predictions_cm.npz",
+    "prediction_sha256": "0927c7a4962ab0149f9f81a0fcc27f98146bad6f84aba0c2525441322c3179f3",
+    "checkpoint_sha256": "ac8e0848c8b264760e1d7899c1a1e455b16d6525a2c69cb67d8f0db6afb49a36"
+  },
+  {
+    "model": "A3",
+    "seed": 2202,
+    "condition": "clean",
+    "source": "/home/lixl/Project/roadbev_5mix/reo/experiments/exp30_sfree_protocol_20261015/runs/A3_s2202/predictions/ep50_native_b8/clean/predictions_cm.npz",
+    "prediction_sha256": "cadead6e45970649629c48e80acde4fd44fedcbe0dd8c99ebf7ac4c63c9d6d76",
+    "checkpoint_sha256": "981fe79aeaf79888bc128e201a601b3b2c3efc296b9887ee10a00d51d27a0fb8"
+  }
+]
