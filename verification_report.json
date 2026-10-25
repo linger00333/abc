@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "files_hashed": 150,
+  "text_files": 118,
+  "PNGs": 17,
+  "PDFs": 12,
+  "NPZs": 5,
+  "checks": [
+    "English-only script and ASCII filenames; decoded JSON, PDF text and image metadata scanned",
+    "Python syntax, relative documentation links and credential patterns checked",
+    "Byte-identical imports checked against source SHA256",
+    "Selected arrays reproduce full-table frame MAEs within 1e-6 cm",
+    "988 paired IDs; 42/120/139 subsets; 23-frame overlap; disjoint 2552/1205/988 splits",
+    "Six final50 qualitative RSRD panels preserve both frames across all three seeds",
+    "Formal table reconstruction tolerance and file inventory checked"
+  ],
+  "inference_validation": "No new model inference. Native CPU projection checks are recorded separately.",
+  "limitations": "Statistical and deployment limitations are documented; no missing experiment is assigned a placeholder score."
+}

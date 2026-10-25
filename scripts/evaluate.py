@@ -88,6 +88,8 @@ def replay(args, samples, output):
     torch.set_num_threads(2)
     if not torch.cuda.is_available():
         raise RuntimeError('Canonical checkpoint replay requires CUDA; offline cache evaluation does not.')
+    torch.backends.cuda.matmul.allow_tf32 = False
+    torch.backends.cudnn.allow_tf32 = True
     baseline = args.model.startswith('baseline')
     if baseline:
         sys.path.insert(0, str(ROOT / 'src/roadbev'))
@@ -108,6 +110,8 @@ def replay(args, samples, output):
             model = SelfSfree(config, initialize=False).cuda().eval()
     # Deserialization is allowed only after matching an inventoried experiment SHA256.
     checkpoint = torch.load(args.checkpoint, map_location='cpu', weights_only=False)
+    if not baseline and checkpoint.get('config') != config:
+        raise ValueError('Supplied config differs from the frozen checkpoint configuration.')
     model.load_state_dict(checkpoint['model'], strict=True)
     epoch = int(checkpoint['epoch']); del checkpoint
     if args.dataset == 'rsrd' and epoch != 50:

@@ -26,7 +26,8 @@ STYLES = {'baseline': ':', 'baseline_aug': '--', 'exp21': '-.', 'S_free': '-'}
 def save(fig, path):
     path.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(Path(str(path) + '.png'), dpi=170, facecolor='white')
-    fig.savefig(Path(str(path) + '.pdf'), metadata={'Title': path.name, 'Author': 'EF-Elev evidence repository'})
+    fig.savefig(Path(str(path) + '.pdf'), metadata={'Title': path.name, 'Author': 'EF-Elev evidence repository',
+                                                   'CreationDate': None, 'ModDate': None})
     plt.close(fig)
 
 
