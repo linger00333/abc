@@ -1,0 +1,30 @@
+{
+  "published_at": "2026-10-25T23:15:31-04:00",
+  "timezone": "America/New_York",
+  "timezone_note": "Mason, Ohio uses the US Eastern time zone; daylight-saving offset was UTC-04:00 at publication.",
+  "source_experiment": "joint_rotation_eval_20261020",
+  "source_result_sha256": {
+    "results/rsrd_joint_rotation/summary_metrics.csv": "6f5268635ad00bd0b8c56127cd8f7d592df985adab94fbae456c4513a67a6d4f",
+    "results/rsrd_joint_rotation/seed_metrics.csv": "bf951dae28c904f6d86cbb0e25dfbe73a6330cdb7523c314d2fd0d5425b8bc7c",
+    "results/rsrd_joint_rotation/visibility.csv": "e35b212129775d863c966a577c0024eefc804bb842acf952b17ba3aee865c6d5",
+    "results/rsrd_joint_rotation/relative_improvement.csv": "d43dff7158ee864652ae45189743da0d0358e664d73a4a4e66dd55e76b2f1065",
+    "evidence/protocols/rsrd_joint_rotation/protocol.json": "07c6a29c60493163613c5b6594f8e39a1644c139036dcd183aeedb07a027aba2",
+    "evidence/provenance/rsrd_joint_rotation/source_sha256.json": "5fd8821d599c7dee0ef5e0716e7a6db0c1595ab2c970db286ad6ee77abf058e5"
+  },
+  "acceptance": {
+    "complete": true,
+    "model_seed_pairs": 9,
+    "joint_conditions": 16,
+    "prediction_groups": 144,
+    "test_frames": 296,
+    "input_hash_checks": 42624,
+    "new_training": false
+  },
+  "excluded": [
+    "server-local absolute paths",
+    "server-local completion timestamps",
+    "datasets",
+    "checkpoints",
+    "prediction arrays"
+  ]
+}

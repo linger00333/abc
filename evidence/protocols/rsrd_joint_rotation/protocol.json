@@ -1,0 +1,257 @@
+{
+  "conditions": [
+    {
+      "name": "joint_p-1_r-1",
+      "magnitude": 1,
+      "pitch": -1,
+      "roll": -1
+    },
+    {
+      "name": "joint_p-1_r+1",
+      "magnitude": 1,
+      "pitch": -1,
+      "roll": 1
+    },
+    {
+      "name": "joint_p+1_r-1",
+      "magnitude": 1,
+      "pitch": 1,
+      "roll": -1
+    },
+    {
+      "name": "joint_p+1_r+1",
+      "magnitude": 1,
+      "pitch": 1,
+      "roll": 1
+    },
+    {
+      "name": "joint_p-2_r-2",
+      "magnitude": 2,
+      "pitch": -2,
+      "roll": -2
+    },
+    {
+      "name": "joint_p-2_r+2",
+      "magnitude": 2,
+      "pitch": -2,
+      "roll": 2
+    },
+    {
+      "name": "joint_p+2_r-2",
+      "magnitude": 2,
+      "pitch": 2,
+      "roll": -2
+    },
+    {
+      "name": "joint_p+2_r+2",
+      "magnitude": 2,
+      "pitch": 2,
+      "roll": 2
+    },
+    {
+      "name": "joint_p-3_r-3",
+      "magnitude": 3,
+      "pitch": -3,
+      "roll": -3
+    },
+    {
+      "name": "joint_p-3_r+3",
+      "magnitude": 3,
+      "pitch": -3,
+      "roll": 3
+    },
+    {
+      "name": "joint_p+3_r-3",
+      "magnitude": 3,
+      "pitch": 3,
+      "roll": -3
+    },
+    {
+      "name": "joint_p+3_r+3",
+      "magnitude": 3,
+      "pitch": 3,
+      "roll": 3
+    },
+    {
+      "name": "joint_p-5_r-5",
+      "magnitude": 5,
+      "pitch": -5,
+      "roll": -5
+    },
+    {
+      "name": "joint_p-5_r+5",
+      "magnitude": 5,
+      "pitch": -5,
+      "roll": 5
+    },
+    {
+      "name": "joint_p+5_r-5",
+      "magnitude": 5,
+      "pitch": 5,
+      "roll": -5
+    },
+    {
+      "name": "joint_p+5_r+5",
+      "magnitude": 5,
+      "pitch": 5,
+      "roll": 5
+    }
+  ],
+  "seeds": [
+    307,
+    1101,
+    2202
+  ],
+  "models": [
+    "baseline",
+    "baseline_aug",
+    "S_free"
+  ],
+  "frames": 296,
+  "selection": "fixed final_epoch50; no test selection",
+  "output_frame": "unchanged gravity-aligned road frame",
+  "GT_unchanged": true,
+  "baseline_projection": "stale original projection; no pose update",
+  "rotation_order": "camera optical roll Rz(roll) @ camera pitch Rx(pitch)",
+  "amplitude": "Each axis has the listed magnitude; four sign combinations per amplitude. Combined rotation is larger than single-axis magnitude.",
+  "image": "Single homography K @ (Rz @ Rx) @ inverse(K), full source 960x540 -> output 960x528, bilinear zero border",
+  "mask_scopes": [
+    "original valid |GT|<20",
+    "per-condition support-visible",
+    "fixed intersection over all 16 joint conditions"
+  ],
+  "condition_visibility": [
+    {
+      "name": "joint_p-1_r-1",
+      "magnitude": 1,
+      "pitch": -1,
+      "roll": -1,
+      "mean_visible_pct": 100.0,
+      "minimum_visible_pct": 100.0
+    },
+    {
+      "name": "joint_p-1_r+1",
+      "magnitude": 1,
+      "pitch": -1,
+      "roll": 1,
+      "mean_visible_pct": 100.0,
+      "minimum_visible_pct": 100.0
+    },
+    {
+      "name": "joint_p+1_r-1",
+      "magnitude": 1,
+      "pitch": 1,
+      "roll": -1,
+      "mean_visible_pct": 99.99307594045567,
+      "minimum_visible_pct": 98.04601899196493
+    },
+    {
+      "name": "joint_p+1_r+1",
+      "magnitude": 1,
+      "pitch": 1,
+      "roll": 1,
+      "mean_visible_pct": 99.99076597214895,
+      "minimum_visible_pct": 98.08254200146092
+    },
+    {
+      "name": "joint_p-2_r-2",
+      "magnitude": 2,
+      "pitch": -2,
+      "roll": -2,
+      "mean_visible_pct": 100.0,
+      "minimum_visible_pct": 100.0
+    },
+    {
+      "name": "joint_p-2_r+2",
+      "magnitude": 2,
+      "pitch": -2,
+      "roll": 2,
+      "mean_visible_pct": 100.0,
+      "minimum_visible_pct": 100.0
+    },
+    {
+      "name": "joint_p+2_r-2",
+      "magnitude": 2,
+      "pitch": 2,
+      "roll": -2,
+      "mean_visible_pct": 99.93470435406775,
+      "minimum_visible_pct": 92.98758217677137
+    },
+    {
+      "name": "joint_p+2_r+2",
+      "magnitude": 2,
+      "pitch": 2,
+      "roll": 2,
+      "mean_visible_pct": 99.91510098237666,
+      "minimum_visible_pct": 92.05624543462382
+    },
+    {
+      "name": "joint_p-3_r-3",
+      "magnitude": 3,
+      "pitch": -3,
+      "roll": -3,
+      "mean_visible_pct": 100.0,
+      "minimum_visible_pct": 100.0
+    },
+    {
+      "name": "joint_p-3_r+3",
+      "magnitude": 3,
+      "pitch": -3,
+      "roll": 3,
+      "mean_visible_pct": 100.0,
+      "minimum_visible_pct": 100.0
+    },
+    {
+      "name": "joint_p+3_r-3",
+      "magnitude": 3,
+      "pitch": 3,
+      "roll": -3,
+      "mean_visible_pct": 99.48060125638077,
+      "minimum_visible_pct": 85.91151553184814
+    },
+    {
+      "name": "joint_p+3_r+3",
+      "magnitude": 3,
+      "pitch": 3,
+      "roll": 3,
+      "mean_visible_pct": 99.44857132186257,
+      "minimum_visible_pct": 85.98995920928773
+    },
+    {
+      "name": "joint_p-5_r-5",
+      "magnitude": 5,
+      "pitch": -5,
+      "roll": -5,
+      "mean_visible_pct": 99.98381249169063,
+      "minimum_visible_pct": 97.88484136310224
+    },
+    {
+      "name": "joint_p-5_r+5",
+      "magnitude": 5,
+      "pitch": -5,
+      "roll": 5,
+      "mean_visible_pct": 99.9726814071136,
+      "minimum_visible_pct": 97.59946281685413
+    },
+    {
+      "name": "joint_p+5_r-5",
+      "magnitude": 5,
+      "pitch": 5,
+      "roll": -5,
+      "mean_visible_pct": 92.31357260412474,
+      "minimum_visible_pct": 71.33668026357076
+    },
+    {
+      "name": "joint_p+5_r+5",
+      "magnitude": 5,
+      "pitch": 5,
+      "roll": 5,
+      "mean_visible_pct": 91.85688838821406,
+      "minimum_visible_pct": 69.87762786319422
+    }
+  ],
+  "common_retention_pct": 89.29888647174256,
+  "manifest_sha256": "7a3a2051699b5e7a41640f89ed9894238d5c80b2a6f7612816a91f677b95fea5",
+  "geometry_source_sha256": "d646a3818f05913a335a79730248e83de4bb19335d9d63153f2326467f57431c",
+  "new_training": false
+}

@@ -37,6 +37,7 @@ These subsets overlap. Native input modalities, augmentations and training setti
 - [Experiment protocol and limitations](docs/PROTOCOL.md): input dependencies, GT frames, masks, selection, versions and statistics.
 - [Review-response evidence map](docs/REVIEW_RESPONSE.md): what the existing experiments resolve and what remains untested.
 - [Results interpretation](docs/RESULTS.md): ablations, shape analysis, real attitude groups, anchors and historical efficiency.
+- [Joint pitch-roll results](docs/RSRD_JOINT_ROTATION.md): the completed RSRD-dense four-sign evaluation, visibility scopes and three-seed records.
 - [Figure index and captions](docs/FIGURES.md): qualitative successes, all seeds for the same frames, and epoch40 supplements.
 - [Reproduction guide](docs/REPRODUCIBILITY.md): offline reconstruction, prediction-cache evaluation and optional checkpoint replay.
 - [References and attribution](docs/SOURCES.md): verified primary sources and third-party notices.
